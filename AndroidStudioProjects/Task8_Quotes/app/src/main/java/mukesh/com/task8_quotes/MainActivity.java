@@ -22,7 +22,6 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<CategoryPost> arrayList = new ArrayList<CategoryPost>();
     private GridView gridView;
     private CustomGridViewAdapter adapter;
 
@@ -32,15 +31,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       /* if (android.os.Build.VERSION.SDK_INT > 9) {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-        }*/
         new Category().execute("http://rapidans.esy.es/test/getallcat.php");
     }
 
     class Category extends AsyncTask<String,Void,String>{
-/*
 
         private ProgressDialog dialog;
 
@@ -52,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
             dialog.setCancelable(false);
             dialog.show();
         }
-*/
 
         @Override
         protected String doInBackground(String... params) {
@@ -90,32 +83,33 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
+            if(dialog.isShowing()) {
+                dialog.dismiss();
+            }
+            ArrayList<CategoryPost> arrayList = new ArrayList<CategoryPost>();
             super.onPostExecute(s);
             try {
                 JSONObject rootObject = new JSONObject(s);
-                int success = rootObject.getInt("success");
+                /*int success = rootObject.getInt("success");
                 String msg = rootObject.getString("message");
-
-                Log.d(TAG,"ID:" +success);
-                Log.d(TAG,"ID:" +msg);
-
-                CategoryPost post = new CategoryPost();
+*/
+/*
 
                 post.setSucess(success);
                 post.setMsg(msg);
+*/
 
                 JSONArray dataObject = rootObject.getJSONArray("data");
                 for (int i = 0; i <dataObject.length() ; i++) {
 
                     JSONObject idObject = dataObject.getJSONObject(i);
+                    CategoryPost post = new CategoryPost();
+
                     String id = idObject.getString("id");
                     String name = idObject.getString("name");
 
-                    Log.d(TAG,"ID:" +id);
-                    Log.d(TAG,"Name:" +name);
                     post.setId(id);
                     post.setName(name);
-
                     arrayList.add(post);
                 }
 

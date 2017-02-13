@@ -39,10 +39,10 @@ public class CustomGridViewAdapter extends ArrayAdapter<CategoryPost> {
         if (convertView == null){
             holder = new ViewHolder();
             convertView = LayoutInflater.from(context).inflate(layoutResourceId, parent, false);
-            holder.success = (TextView)convertView.findViewById(R.id.tv_success_id);
+            /*holder.success = (TextView)convertView.findViewById(R.id.tv_success_id);
             holder.message = (TextView)convertView.findViewById(R.id.tv_msg_id);
             holder.id = (TextView)convertView.findViewById(R.id.tv_data_id);
-            holder.name = (TextView)convertView.findViewById(R.id.tv_name_id);
+*/            holder.name = (TextView)convertView.findViewById(R.id.tv_name_id);
             convertView.setTag(holder);
         }
 
@@ -51,10 +51,10 @@ public class CustomGridViewAdapter extends ArrayAdapter<CategoryPost> {
         }
 
         CategoryPost post = data.get(position);
-        holder.success.setText("Success: "+post.getSucess());
+        /*holder.success.setText("Success: "+post.getSucess());
         holder.message.setText("Message: "+post.getMsg());
-        holder.id.setText("ID: "+post.getId());
-        holder.name.setText("Name: "+post.getName());
+        holder.id.setText("ID: "+post.getId());*/
+        holder.name.setText(post.getName());
 
         return convertView;
     }
