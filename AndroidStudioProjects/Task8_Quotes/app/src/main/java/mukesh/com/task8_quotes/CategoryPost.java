@@ -7,7 +7,7 @@ public class CategoryPost {
 
     private int sucess;
     private String msg;
-    private String id;
+    private int id;
     private String name;
 
     public int getSucess() {
@@ -26,11 +26,11 @@ public class CategoryPost {
         this.msg = msg;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
