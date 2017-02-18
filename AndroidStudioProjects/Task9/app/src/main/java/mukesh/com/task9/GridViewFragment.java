@@ -9,7 +9,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,6 +33,15 @@ public class GridViewFragment extends Fragment {
     private CustomGridViewAdapter adapter;
     private static final String TAG = "JSON Parsing ";
 
+    private int imgs[] = new int[]{
+            R.drawable.life,
+            R.drawable.valentine,
+            R.drawable.love,
+            R.drawable.friendship,
+            R.drawable.positive,
+            R.drawable.funny,
+            R.drawable.motivation
+    };
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,7 +61,7 @@ public class GridViewFragment extends Fragment {
         protected void onPreExecute() {
             super.onPreExecute();
             dialog = new ProgressDialog(getActivity());
-            dialog.setMessage("Please Wait While Loading...");
+            dialog.setMessage("Please wait while loading...");
             dialog.setCancelable(false);
             dialog.show();
         }
@@ -113,9 +125,27 @@ public class GridViewFragment extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
             gridView = (GridView)view.findViewById(R.id.grid_id);
-            adapter = new CustomGridViewAdapter(getActivity(),R.layout.gv_category,arrayList);
+
+            Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.grid_animation);
+            gridView.startAnimation(animation);
+            animation.setAnimationListener(new Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart(Animation animation) {
+
+                }
+
+                @Override
+                public void onAnimationEnd(Animation animation) {
+                    Toast.makeText(getActivity(), "Welcome to Your Quote", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAnimationRepeat(Animation animation) {
+
+                }
+            });
+            adapter = new CustomGridViewAdapter(getActivity(),R.layout.gv_category,arrayList,imgs);
             gridView.setAdapter(adapter);
         }
     }
