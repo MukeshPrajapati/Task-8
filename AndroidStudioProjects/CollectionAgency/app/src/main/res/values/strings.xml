@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Collection Agency</string>
+    <string name="title_activity_ca__manager__home_screen">CA_Manager_HomeScreen</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="date_pick">Select Date of Birth</string>
+
+
+    <string name="city_prompt">Choose City</string>
+    <string-array name="city_arrays">
+        <item>Ahmedabad</item>
+        <item>Lucknow</item>
+        <item>Allahbad</item>
+        <item>Amritsar</item>
+        <item>Ludhiana</item>
+        <item>Kanpur</item>
+        <item>Vadodara</item>
+    </string-array>
+
+    <string name="state_prompt">Choose State</string>
+    <string-array name="state_arrays">
+        <item>Gujarat</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttar Pradesh</item>
+        <item>Punjab</item>
+        <item>Punjab</item>
+        <item>Uttar Pradesh</item>
+        <item>Gujarat</item>
+    </string-array>
+
+    <string name="company_prompt">Choose Company</string>
+    <string-array name="company_arrays">
+        <item>Vodafone</item>
+        <item>AirTel</item>
+        <item>Idea</item>
+        <item>Telenor</item>
+        <item>DOCOMO</item>
+        <item>Aircel</item>
+        <item>Reliance</item>
+    </string-array>
+    <string name="title_activity_ca__manager__screen">Manager Screen</string>
+
+    <string-array name="agent_srno">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="agent_names">
+        <item>Mukesh</item>
+        <item>Dharmesh</item>
+        <item>Rohit</item>
+        <item>Gautam</item>
+        <item>Ravi</item>
+        <item>Hritik</item>
+        <item>Akshay</item>
+        <item>Rajesh</item>
+        <item>Yash</item>
+        <item>Mahendra</item>
+        <item>Sachin</item>
+    </string-array>
+
+    <string-array name="agent_area">
+        <item>New Ranip</item>
+        <item>Meethakali</item>
+        <item>Naroda</item>
+        <item>Chandkheda</item>
+        <item>Wadaj</item>
+        <item>New Ranip</item>
+        <item>Wadaj</item>
+        <item>Wadaj</item>
+        <item>New Ranip</item>
+        <item>New Ranip</item>
+        <item>Meethakhali</item>
+    </string-array>
+
+</resources>

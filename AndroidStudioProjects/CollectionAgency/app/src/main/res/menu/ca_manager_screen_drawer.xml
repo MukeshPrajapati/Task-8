@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_agent_reg"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Agent Registration" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notification" />
+        <!--<item
+            android:id="@+id/nav_assigntask"
+            android:icon="@drawable/ic_event_available_black_24dp"
+            android:title="Assign Task" />-->
+        <item
+            android:id="@+id/nav_removeagent"
+            android:icon="@drawable/ic_event_busy_black_24dp"
+            android:title="Remove Agent" />
+
+        <item
+            android:id="@+id/nav_companyreg"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="Company Registration" />
+
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+-->
+</menu>
