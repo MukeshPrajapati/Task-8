@@ -9,66 +9,145 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.collectionagency.collectionagency.CA_Company_HomeScreen">
+    android:weightSum="9"
+    tools:context=".company.CA_Company_HomeScreen">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="104dp"
-            android:text="Vodafone sakfjbshcbembb asjehfuew makecvye"
-            android:textAlignment="center"/>
-
-    </LinearLayout>
+<!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:weightSum="8"
+        android:id="@+id/layout_excel">
+
+        <TextView
+            android:id="@+id/excel_company_srno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sr No."
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/excel_company_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/excel_company_mobno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mobile No"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/excel_company_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Amount"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/excel_company_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Address"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/excel_company_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Area"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/excel_company_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="City"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/excel_company_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="State"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+-->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/lvcontainer"
+        android:layout_weight="7"></ListView>
+
+    <TextView
+        android:id="@+id/txtresulttext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@android:id/list"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.5"
+        android:gravity="left"
+        android:text=""
+        android:textColor="#FFF55F54"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/ca_company_btn_browse"
-            android:text="Browse"
-            android:background="@drawable/rounded_button"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/browse"
-            android:layout_marginTop="20dp"
-            android:id="@+id/selected"
-            android:textStyle="bold"
-            android:textColor="#4189E1"
-            android:textSize="20sp"
-            android:text="Selected file" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/selected"
-            android:layout_marginTop="20dp"
-            android:id="@+id/file_path"
-            android:text="No file has been selected"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="95dp">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
             android:id="@+id/ca_company_btn_upload"
             android:text="UPLOAD"
-            android:textSize="20sp"
-            android:background="@drawable/rounded_button"/>
-
+            android:textColor="#FAFAFA"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_button"
+            android:layout_weight="1"/>
     </LinearLayout>
-
 </LinearLayout>

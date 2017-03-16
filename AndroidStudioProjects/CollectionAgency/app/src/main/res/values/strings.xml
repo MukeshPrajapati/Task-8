@@ -8,6 +8,8 @@
     <string name="action_settings">Settings</string>
     <string name="date_pick">Select Date of Birth</string>
 
+    <string name="title_activity_ca__agent__home_screen">Agent</string>
+
 
     <string name="city_prompt">Choose City</string>
     <string-array name="city_arrays">
@@ -29,6 +31,13 @@
         <item>Punjab</item>
         <item>Uttar Pradesh</item>
         <item>Gujarat</item>
+    </string-array>
+
+
+    <string name="gender_prompt">Choose State</string>
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
     </string-array>
 
     <string name="company_prompt">Choose Company</string>

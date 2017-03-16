@@ -9,7 +9,7 @@
     tools:openDrawer="start">
 
     <include
-        layout="@layout/app_bar_ca__manager__screen"
+        layout="@layout/ca_manager_screen_app_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_ca__manager__screen"
+        app:headerLayout="@layout/ca_manager_screen_nav_header"
         app:menu="@menu/ca_manager_screen_drawer" />
 
 </android.support.v4.widget.DrawerLayout>

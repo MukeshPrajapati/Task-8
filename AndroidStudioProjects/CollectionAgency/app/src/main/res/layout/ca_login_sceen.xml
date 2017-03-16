@@ -32,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone/Email"
+            android:maxLines="1"
             android:id="@+id/ca_et_login"
             android:textAlignment="center"
             />
@@ -40,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:maxLines="1"
             android:textAlignment="center"
             android:id="@+id/ca_et_password"
             android:layout_marginTop="10dp"

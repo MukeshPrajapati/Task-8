@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.collectionagency.collectionagency.agent.CA_Agent_HomeScreen;
+import com.collectionagency.collectionagency.company.CA_Company_HomeScreen;
+import com.collectionagency.collectionagency.manager.CA_Manager_Screen;
+
 public class CA_Login_MainActivity extends Fragment {
 
     private View view;
@@ -44,6 +48,11 @@ public class CA_Login_MainActivity extends Fragment {
 
                 else if(username.getText().toString().equals("company") && password.getText().toString().equals("company")) {
                     Intent intent = new Intent(CA_Login_MainActivity.this.getActivity(), CA_Company_HomeScreen.class);
+                    startActivity(intent);
+                }
+
+                else if(username.getText().toString().equals("agent") && password.getText().toString().equals("agent")) {
+                    Intent intent = new Intent(CA_Login_MainActivity.this.getActivity(),CA_Agent_HomeScreen.class);
                     startActivity(intent);
                 }
             }

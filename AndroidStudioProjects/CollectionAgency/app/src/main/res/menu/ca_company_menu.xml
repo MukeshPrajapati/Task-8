@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <item
-            android:id="@+id/ca_company_editprofile"
-            android:orderInCategory="100"
-            android:title="Edit Profile"
-            app:showAsAction="never" />
-
-        <item
             android:id="@+id/ca_company_cp"
             android:orderInCategory="100"
             android:title="Change Password"

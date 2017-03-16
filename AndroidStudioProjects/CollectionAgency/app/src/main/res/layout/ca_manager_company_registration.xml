@@ -10,7 +10,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
-        tools:context="com.collectionagency.collectionagency.CA_Manager_Agent_Registration">
+        tools:context=".manager.CA_Manager_Agent_Registration">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Phone"
+                android:maxLines="1"
                 android:inputType="number"
                 android:gravity="center"/>
         </LinearLayout>
@@ -64,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:inputType="textPassword"
+                android:maxLines="1"
                 android:gravity="center"/>
         </LinearLayout>
 
