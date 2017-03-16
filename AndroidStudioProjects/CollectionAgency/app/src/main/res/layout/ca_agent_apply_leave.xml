@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ca_agent_apply_leave"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".agent.CA_Agent_Apply_Leave">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From :"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date of Birth"
+            android:id="@+id/selected_date_from"
+            android:textSize="20sp"
+            android:layout_marginRight="3dp"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="showDatePickerDialog"
+            android:background="@drawable/ic_dob"
+            android:id="@+id/button" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To :"
+            android:textSize="20sp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date of Birth"
+            android:id="@+id/selected_date_to"
+            android:layout_marginLeft="25dp"
+            android:textSize="20sp"
+            android:layout_marginRight="3dp"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="showDatePickerDialog1"
+            android:background="@drawable/ic_dob"
+            android:id="@+id/button1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FAFAFA"
+            android:id="@+id/ca_btn_register1" />
+    </LinearLayout>
+
+</LinearLayout>

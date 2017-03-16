@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:weightSum="8"
+        android:id="@+id/layout_excel">
+
+        <TextView
+            android:id="@+id/excel_company_srno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sr No."
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/excel_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/excel_company_mobno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mobile No"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <!--<TextView
+            android:id="@+id/excel_company_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Amount"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />-->
+        <!--
+
+
+        <TextView
+            android:id="@+id/excel_company_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Address"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/excel_company_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Area"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/excel_company_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="City"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/excel_company_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="State"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+-->
+    </LinearLayout>
+</LinearLayout>
